@@ -1,19 +1,17 @@
-const numberOfFilms = +prompt("Сколько фильмов посмотрел?", "");
- 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+"use strict";
 
-const a = prompt("Какой последний фильм?"),
-      b = prompt("Оценка"),
-      c = prompt("Какой последний фильм?"),
-      d = prompt("Оценка");
+const num = 6;
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+switch (num) {
+    case 0:
+        console.log('0');
+        break;
+    case -1: 
+        console.log('dadada super ti molodec');
+        break;
+    default: 
+        console.log("dinahu");
+        break;
+}
 
-console.log(personalMovieDB);
+(num == 1) ? console.log('yes') : console.log('no');
