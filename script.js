@@ -1,10 +1,19 @@
-"use strict";
+const numberOfFilms = +prompt("Сколько фильмов посмотрел?", "");
+ 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-const cat = 'course';
-const smt = 'all';
+const a = prompt("Какой последний фильм?"),
+      b = prompt("Оценка"),
+      c = prompt("Какой последний фильм?"),
+      d = prompt("Оценка");
 
-console.log(`http://udemy.com/${cat}/12/${smt}`);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const name = 'Lev';
-
-alert(`Hi, ${name}`)
+console.log(personalMovieDB);
